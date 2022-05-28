@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😂Memes😂 Generator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        header{
+            background-image: linear-gradient(rgba(42, 61, 187, 0.5), rgba(0,0,0,0.5)), url(../black.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        ul {
+            float: right;
+            list-style-type: none;
+            
+        }
+        ul li{
+            display: inline-block;
+            margin-top: 20px;
+
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            margin-top: 10px;
+            padding: 10px 30px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+            
+        }
+        ul li a:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        ul li.active a{
+            background-color: #fff;
+            color: #000;
+        }
+        .logo img{
+            float: left;
+            margin: 10px;
+            width: 90px;
+            height: auto;
+            cursor: pointer;
+        }
+        .main{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .title{
+            position: absolute;
+            top: 50%;
+            font-size:large;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .title h1 span{
+            color: rgb(14, 108, 166);
+        }
+        .title h1{
+            color: white;
+        }
+        .title p{
+            color: #fff;
+            margin: 20px;
+        }
+        footer{
+            background-color: rgb(147, 136, 136);
+            color: black;
+            text-align: center;
+            cursor: pointer;
+        }
+        button{
+            text-align: center;
+            margin: 8px;
+            padding: 8px;
+            color: rgb(16, 123, 205);
+            font-size: large;
+            border-radius: 5px;
+            
+        }
+        button:hover{
+            /* background-color: #000; */
+            color: blue;
+        }
+        
+
+@media screen and (max-width:500px){
+    header{
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding: 0%;
+    }
+    ul {
+        float: right;
+            list-style-type: none;
+    }
+    ul li{
+            display: block;
+            margin-top: 20px;
+
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            padding: 10px 30px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+        .logo img{
+            float: left;
+            display: block;
+            margin: 10px;
+            width: 90px;
+            height: auto;
+            cursor: pointer;
+        }
+        .main{
+            max-width: 1200px;
+            margin: auto;
+            display: inline-block;
+        }
+        .title{
+            position: absolute;
+            /* display: block; */
+            top: 50%;
+            font-size:large;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .title h1{
+            display: block;
+            color: white;
+        }
+        .title p{
+            color: #fff;
+            display: block;
+            margin: auto;
+            padding:0%;
+            margin: 20px;
+        }
+
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="logo">
+            <img src="logomeme.png" alt="">
+        </div>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="memes.html" target="_blank">😂Memes😂</a></li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>Memes Generator <span>using Javascript</span> </h1>
+        <p><marquee>In this meme web application, I am using Javascript + Reddit APIs.</marquee>  Reddit-API is a small node library that makes it easy to use the reddit api in both the server and client.The Reddit API (Application Programming Interface) allows you to extract data, or post to Reddit using a web application or your preferred programming language. </p>
+        <button><a href="memes.html">Memes</a></button>
+    </div>
+</header>
+<footer>
+    © 2020 Copyright: 😂Memes😂.com
+</footer>
+    
+</body>
+</html>
